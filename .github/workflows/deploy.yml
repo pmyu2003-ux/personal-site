@@ -23,11 +23,9 @@ jobs:
         run: mkdocs build --site-dir public
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          force_orphan: true
-          publish_branch: gh-pages
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          folder: public
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true
