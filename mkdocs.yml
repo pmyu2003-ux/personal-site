@@ -1,0 +1,41 @@
+site_name: Мой персональный сайт 
+site_description: Персональный сайт-визитка, созданный с помощью MkDocs 
+site_author: Петров Михаил Юрьевич 
+site_url: https://pmyu2003-ux.github.io/personal-site/ 
+
+theme:
+  name: material 
+  features: 
+    - navigation.tabs 
+    - navigation.sections 
+    - navigation.top 
+    - search.highlight 
+    - search.share 
+  palette: 
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+nav:
+  - Главная: index.md
+  - О себе: about.md
+  - Проекты: projects.md
+  - Контакты: contacts.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pmyu2003-ux
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/your_telegram
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourprofile
+copyright: Copyright &copy; 2026 Петров Михаил Юрьевич
+
